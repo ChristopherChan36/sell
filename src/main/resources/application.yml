@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123
+    url: jdbc:mysql://localhost/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  # 配置 json 转化规则
+  jackson:
+    default-property-inclusion: non_null
+server:
+  context-path: /sell
+
+
+# wechat 公众号参数
+wechat:
+  mpAppId: wxef4d51981996b443
+  mpAppSecret: 2db4e1b08f5dac034f229518162a5c4b
+
+# \u65E5\u5FD7 logback \u7684\u914D\u7F6E
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+##  path: F:\LogFile\sell
+#  file: F:\LogFile\sell\sell.log
+#  level:
+#    com.pisces.sell.LoggerTest: debug

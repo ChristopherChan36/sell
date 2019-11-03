@@ -1,13 +1,13 @@
 package com.pisces.sell.controller;
 
-import com.pisces.sell.VO.ProductInfoVO;
-import com.pisces.sell.VO.ProductVO;
-import com.pisces.sell.VO.ResultVO;
 import com.pisces.sell.entity.ProductCategory;
 import com.pisces.sell.entity.ProductInfo;
 import com.pisces.sell.service.CategoryService;
 import com.pisces.sell.service.ProductService;
 import com.pisces.sell.utils.ResultVOUtil;
+import com.pisces.sell.vo.ProductInfoVO;
+import com.pisces.sell.vo.ProductVO;
+import com.pisces.sell.vo.ResultVO;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

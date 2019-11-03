@@ -1,6 +1,6 @@
 package com.pisces.sell.utils;
 
-import com.pisces.sell.VO.ResultVO;
+import com.pisces.sell.vo.ResultVO;
 
 /**
  * <p>Title: ResultVOUtil </p>

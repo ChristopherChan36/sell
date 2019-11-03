@@ -1,4 +1,4 @@
-package com.pisces.sell.VO;
+package com.pisces.sell.vo;
 
 import lombok.Data;
 

@@ -1,6 +1,5 @@
 package com.pisces.sell.controller;
 
-import com.pisces.sell.VO.ResultVO;
 import com.pisces.sell.converter.OrderForm2OrderDTOConverter;
 import com.pisces.sell.dto.OrderDTO;
 import com.pisces.sell.enums.ResultEnum;
@@ -9,6 +8,7 @@ import com.pisces.sell.form.OrderForm;
 import com.pisces.sell.service.BuyerService;
 import com.pisces.sell.service.OrderService;
 import com.pisces.sell.utils.ResultVOUtil;
+import com.pisces.sell.vo.ResultVO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -36,11 +36,15 @@ import java.util.Map;
 @RequestMapping("/buyer/order")
 public class BuyerOrderController {
 
-    @Autowired
-    private OrderService orderService;
+    private final OrderService orderService;
+
+    private final BuyerService buyerService;
 
     @Autowired
-    private BuyerService buyerService;
+    public BuyerOrderController(OrderService orderService, BuyerService buyerService) {
+        this.orderService = orderService;
+        this.buyerService = buyerService;
+    }
 
     /**
      * 创建订单.
